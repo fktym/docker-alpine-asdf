@@ -1,7 +1,7 @@
 FROM frolvlad/alpine-glibc:alpine-3.9
 
 RUN apk upgrade --update && \
-    apk add --no-cache --update git bash 
+    apk add --no-cache --update git bash curl
 
 SHELL ["/bin/bash", "-l", "-c"]
 # https://asdf-vm.com/#/core-manage-asdf-vm
